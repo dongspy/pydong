@@ -45,7 +45,7 @@ def log(file_name=None, logger_name=__name__, quite=False):
     logger.setLevel(logging.INFO)
     console = logging.StreamHandler()
     console.setFormatter(formatter)
-    if not quite:
+    if quite:
         console.setLevel(logging.ERROR)
     logger.addHandler(console)
     if file_name:

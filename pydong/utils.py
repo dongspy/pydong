@@ -39,9 +39,8 @@ def log(file_name=None, logger_name=__name__, quite=False):
     """
     logger = logging.getLogger(logger_name)
     formatter = logging.Formatter(
-        "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-        datefmt="%Y-%m-%d %H:%M:%S")
-#     formatter.formatTime('%Y-%m-%d %H:%M:%S')
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+#         datefmt="%Y-%m-%d %H:%M:%S"
     logger.setLevel(logging.INFO)
     console = logging.StreamHandler()
     console.setFormatter(formatter)

@@ -15,7 +15,7 @@ Types of Contributions
 Report Bugs
 ~~~~~~~~~~~
 
-Report bugs at https://github.com/lipidong/pydong/issues.
+Report bugs at https://github.com/dongspy/pydong/issues.
 
 If you are reporting a bug, please include:
 
@@ -103,7 +103,7 @@ Before you submit a pull request, check that it meets these guidelines:
    your new functionality into a function with a docstring, and add the
    feature to the list in README.rst.
 3. The pull request should work for Python 3.5, 3.6, 3.7 and 3.8, and for PyPy. Check
-   https://travis-ci.com/lipidong/pydong/pull_requests
+   https://travis-ci.com/dongspy/pydong/pull_requests
    and make sure that the tests pass for all supported Python versions.
 
 Tips

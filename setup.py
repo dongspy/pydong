@@ -43,7 +43,7 @@ setup(
     packages=find_packages(include=['pydong', 'pydong.*']),
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/lipidong/pydong',
-    version='0.1.1',
+    url='https://github.com/dongspy/pydong',
+    version='0.1.2',
     zip_safe=False,
 )

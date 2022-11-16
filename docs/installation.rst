@@ -32,13 +32,13 @@ You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/lipidong/pydong
+    $ git clone git://github.com/dongspy/pydong
 
 Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl -OJL https://github.com/lipidong/pydong/tarball/master
+    $ curl -OJL https://github.com/dongspy/pydong/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/lipidong/pydong
-.. _tarball: https://github.com/lipidong/pydong/tarball/master
+.. _Github repo: https://github.com/dongspy/pydong
+.. _tarball: https://github.com/dongspy/pydong/tarball/master

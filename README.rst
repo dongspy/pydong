@@ -23,11 +23,6 @@ pidong's python tool
 * Documentation: https://pydong.readthedocs.io.
 
 
-Features
---------
-
-* TODO
-
 Credits
 -------
 

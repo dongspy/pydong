@@ -227,3 +227,61 @@ def dbg(exp: _ExpType) -> _ExpType:
             break
 
     return exp
+
+
+def today(fmt='%Y-%m-%d'):
+    """get today's date based on the format
+
+    Parameters
+    ----------
+    fmt : str, optional
+        the date format, by default '%Y-%m-%d'
+
+    Returns
+    -------
+    str
+        the string of today
+    """
+    return datetime.today().strftime(fmt)
+
+def aa(num):
+    """"""
+
+
+def sizeof_fmt(num, suffix="B"):
+    """format the size
+
+    Parameters
+    ----------
+    num : int
+        the size value
+    suffix : str, optional
+        the suffix, by default "B"
+
+    Returns
+    -------
+    str
+        the human-readable string
+    """
+    
+    a = 5
+    for unit in ["", "Ki", "Mi", "Gi", "Ti", "Pi", "Ei", "Zi"]:
+        if abs(num) < 1024.0:
+            return "%3.1f %s%s" % (num, unit, suffix)
+        num /= 1024.0
+    return "%.1f %s%s" % (num, "Yi", suffix)
+
+def get_var_size(var):
+    """get the size of variable
+
+    Parameters
+    ----------
+    var : any variable
+        the variable in globales()
+
+    Returns
+    -------
+    str
+        the size of variable
+    """
+    return sizeof_fmt(sys.getsizeof(var))

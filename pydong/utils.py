@@ -188,13 +188,16 @@ def try_except(f, require_ipdb=True):
             )
             print(exc_type(message))
             if require_ipdb:
-                import ipdb;
+                import ipdb
                 ipdb.set_trace()
         finally:
             pass
     return handle_problems
 
+
 _ExpType = typing.TypeVar('_ExpType')
+
+
 def dbg(exp: _ExpType) -> _ExpType:
     """
     The code from https://github.com/tylerwince/pydbg
@@ -202,7 +205,7 @@ def dbg(exp: _ExpType) -> _ExpType:
     Call dbg with any variable or expression.
     Calling dbg will print to stderr the current filename and lineno,
     as well as the passed expression and what the expression evaluates to:
-    
+
     Examples
     --------
     >>> a = 2
@@ -211,13 +214,13 @@ def dbg(exp: _ExpType) -> _ExpType:
     >>> def square(x: int) -> int:
     >>>     return x * x
     >>> dbg(square(a))
-    
+
     """
     for frame in inspect.stack():
         line = frame.code_context[0]
         if "dbg" in line:
             start = line.find('(') + 1
-            end =  line.rfind(')')
+            end = line.rfind(')')
             if end == -1:
                 end = len(line)
             print(
@@ -229,7 +232,7 @@ def dbg(exp: _ExpType) -> _ExpType:
     return exp
 
 
-def today(fmt='%Y-%m-%d'):
+def now(fmt='%Y-%m-%d %H:%M:%S'):
     """get today's date based on the format
 
     Parameters
@@ -242,10 +245,7 @@ def today(fmt='%Y-%m-%d'):
     str
         the string of today
     """
-    return datetime.today().strftime(fmt)
-
-def aa(num):
-    """"""
+    return datetime.now().strftime(fmt)
 
 
 def sizeof_fmt(num, suffix="B"):
@@ -263,13 +263,14 @@ def sizeof_fmt(num, suffix="B"):
     str
         the human-readable string
     """
-    
+
     a = 5
     for unit in ["", "Ki", "Mi", "Gi", "Ti", "Pi", "Ei", "Zi"]:
         if abs(num) < 1024.0:
             return "%3.1f %s%s" % (num, unit, suffix)
         num /= 1024.0
     return "%.1f %s%s" % (num, "Yi", suffix)
+
 
 def get_var_size(var):
     """get the size of variable

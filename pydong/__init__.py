@@ -6,6 +6,6 @@ __version__ = '0.1.2'
 
 __all__ = ["log", 'safe_open',  "safe_run", "time2str",
            'str2time', 'format_df', 'dbg', 'try_except',
-           "today", "sizeof_fmt", "get_var_size"
+           "now", "sizeof_fmt", "get_var_size"
            ]
 from .utils import *

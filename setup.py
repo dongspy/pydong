@@ -27,6 +27,8 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
     ],
     description="pidong's python tool",
     entry_points={
@@ -44,6 +46,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/dongspy/pydong',
-    version='0.1.2',
+    version='0.1.3',
     zip_safe=False,
 )
